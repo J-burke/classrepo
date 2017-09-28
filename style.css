@@ -1,0 +1,228 @@
+body {
+    background-color: grey;
+}
+section {
+    color: white;
+    border: 2px solid;
+}
+.border-radius {
+    border: orange groove 12px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+.background-img {
+    height: 120px;
+    width: 240px;
+    position: relative;
+    background-image: url(images/doberman.jpeg);
+    background-clip: padding-box;
+    padding: 10px;
+    left: 25%;
+    /* this is where brandon showed transition-duration
+    transition-duration: 300ms; as well as the hover below */
+}
+.background-img:hover {
+    padding: 200px;
+}
+this is there it ends from what he showed */ .word-wrap {
+    width: 220px;
+    overflow-wrap: break-word;
+    background: red;
+    color: white;
+}
+.gradient {
+    height: 420px;
+    width: 420px;
+    background-color: red;
+    background: repeating-radial-gradient(rgba(255, 255, 255, 0), red 10%, black 20%, lime 30%);
+    background: -moz-repeating-radial-gradient(rgba(255, 255, 255, 0), red 10%, black 20%, lime 30%);
+    background: -webkit-repeating-radial-gradient(rgba(255, 255, 255, 0), red 10%, black 20%, lime 30%);
+    background: -o-repeating-radial-gradient(rgba(255, 255, 255, 0), red 10%, black 20%, lime 30%);
+    border-width: 20px;
+    border-style: solid;
+    border-image: linear-gradient(gray, black, red);
+    border-image-slice: 1;
+}
+.transition {
+    height: 320px;
+    width: 320px;
+    background-color: red;
+    transition: height 3s;
+    border-image: linear-gradient(red, black, orange);
+}
+.transition:hover {
+    width: 200px;
+}
+.img-o {
+    height: 200px;
+    width: 200px;
+    opacity: 1;
+}
+.img-o-half {
+    height: 200px;
+    width: 200px;
+    opacity: .5;
+}
+.img-o-quart {
+    height: 200px;
+    width: 200px;
+    opacity: .25;
+}
+.overflow-y {
+    height: 300px;
+    width: 300px;
+    border: 1px solid black;
+    overflow-y: scroll;
+}
+.icup span:nth-of-type(odd) {
+    color: lime;
+}
+.icup span:nth-of-type(even) {
+    color: yellow;
+}
+.background-blend {
+    width: 220px;
+    position: relative;
+    height: 220px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(images/octocat.jpg), linear-gradient(to right, blue 80%, white 100%);
+}
+.align {
+    text-align: right;
+}
+.column {
+    font-size: 20px;
+    column-count: 2;
+    column-gap: 40px;
+    column-rule: 8px groove;
+    color: lightblue;
+}
+.box-shadow {
+    width: 200px;
+    height: 200px;
+    background-color: purple;
+    box-shadow: 20px 20px 50px 20px black;
+}
+.resizable {
+    height: 220px;
+    width: 220px;
+    background-color: yellow;
+    overflow: auto;
+    resize: both;
+}
+.stroke {
+    font-size: 12px;
+    -webkit-text-stroke: 2px;
+}
+.text-dec {
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+.list-style {
+    list-style: tibetan;
+    text-indent: 20px;
+}
+.animate-one {
+    height: 200px;
+    width: 200px;
+    background-color: maroon;
+    position: relative;
+    animation-name: ani;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    color: black;
+}
+@keyframes animate-one {
+    0% {
+        background-color: black;
+        left: 0%;
+    }
+    50% {
+        background-color: red;
+        left: 100%;
+    }
+    100% {
+        background-color: yellow;
+        left: 0%;
+    }
+}
+.animate-two {
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+    position: relative;
+    animation-name: ani;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    color: white;
+}
+@keyframes animate-two {
+    0% {
+        background-color: green;
+        left: 0px;
+    }
+    50% {
+        background-color: red;
+        left: 100%;
+    }
+    100% {
+        background-color: orange;
+        left: 0px;
+    }
+}
+.animate-three {
+    height: 200px;
+    width: 200px;
+    background-color: lime;
+    position: relative;
+    animation-name: ani;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    color: orange;
+}
+@keyframes animate-three {
+    0% {
+        background-color: white;
+        left: 0px;
+    }
+    50% {
+        background-color: red;
+        left: 100%;
+    }
+    100% {
+        background-color: purple;
+        left: 0px;
+    }
+}
+.puspa-example {
+    width: 200px;
+    height: 5px;
+    padding: 5%;
+    background-color: yellow;
+    border: 2px solid green;
+    transform: rotate(10deg);
+}
+.why {
+    width: 100px;
+    height: 100px;
+    background: purple;
+    position: relative;
+    -webkit-animation-name: helo;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-timing-function: linear;
+    animation-iteration-count: -webkit-infinite;
+    animation-delay: 3s;
+}
+@-webkit-keyframes helo {
+    from {
+        left: 0px;
+    }
+    to {
+        left: 1000px;
+    }
+}
